@@ -1,0 +1,47 @@
+name: Sincronizar desde guia-ai-first
+
+# La plantilla no se edita a mano: este workflow es lo único que la escribe.
+# Lee metodo/plantilla/ de qtorb/guia-ai-first (público) y publica el resultado aquí.
+
+on:
+  schedule:
+    - cron: '17 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sincronizar:
+    if: github.repository == 'qtorb/metodo-ai-first-plantilla'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: plantilla
+      - uses: actions/checkout@v4
+        with:
+          repository: qtorb/guia-ai-first
+          ref: main
+          path: fuente
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Construir la plantilla desde la fuente
+        working-directory: fuente
+        run: node scripts/publicar-plantilla.mjs
+      - name: Sincronizar
+        run: rsync -a --delete --exclude .git --exclude .github fuente/dist-plantilla/ plantilla/
+      - name: Publicar si hay diferencias
+        working-directory: plantilla
+        run: |
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "Sin diferencias: no se publica nada."
+            exit 0
+          fi
+          FUENTE_SHA=$(git -C ../fuente rev-parse --short HEAD)
+          git config user.name "guia-ai-first"
+          git config user.email "noreply@qtorb.com"
+          git add -A
+          git commit -m "Sincronizada desde guia-ai-first@${FUENTE_SHA}"
+          git push origin main
