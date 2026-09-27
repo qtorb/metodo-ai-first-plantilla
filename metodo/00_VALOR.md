@@ -1,7 +1,7 @@
 # Valor y fase
 
 > El fichero que gobierna todo lo demás. Se rellena el primer día y se relee en cada checkpoint.
-> Manual: capítulo 1<!--cap:plan-vs-proyecto-->.
+> Manual: capítulos 2.1<!--cap:ejes--> y 2.2<!--cap:fase-->.
 
 ---
 
@@ -32,7 +32,7 @@ Fecha: 14/09/2026
 - **C — Funciona, y hay gente usándolo.** Personas que no eres tú lo usan sin que tú estés delante. A partir de aquí, cada error lo paga alguien más.
 <!-- /BLOQUE: columnas-abc -->
 
-La columna decide qué controles y qué stack tocan (manual, capítulos 2.2<!--cap:fase--> y 15). Se cambia en las dos direcciones: volver de B a A es normal cuando descubres que el destinatario era otro. Al cambiar, se retiran controles (10.3<!--cap:retirar-controles-->), no se acumulan.
+La columna decide qué controles y qué stack tocan (manual, capítulos 2.2<!--cap:fase--> y 15<!--cap:stack-->). Se cambia en las dos direcciones: volver de B a A es normal cuando descubres que el destinatario era otro. Al cambiar, se retiran controles (10.3<!--cap:retirar-controles-->), no se acumulan. En cada checkpoint, la cuarta pregunta es si sigue siendo esta.
 
 ---
 

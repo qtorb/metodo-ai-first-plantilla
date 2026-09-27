@@ -1,4 +1,4 @@
-# Líneas rojas
+# Líneas rojas y protocolo de uso
 
 > Los límites que no están escritos se negocian solos a las once de la noche de un jueves con una entrega encima.
 > Manual: capítulo 3.3<!--cap:lineas-rojas-->.
@@ -13,25 +13,43 @@ Tres mínimo. Y ninguna la escribe un modelo.
 
 _______________________________________________
 
-**Fecha:** ________ · **Firma:** ________
+**Fecha:** ____________ · **Firma:** ________
 
 ## 2 · Qué datos no compartiré nunca con un modelo
 
 _______________________________________________
 
-**Fecha:** ________ · **Firma:** ________
+**Fecha:** ____________ · **Firma:** ________
 
 ## 3 · Qué no publicaré nunca sin que lo mire alguien
 
 _______________________________________________
 
-**Fecha:** ________ · **Firma:** ________
+**Fecha:** ____________ · **Firma:** ________
 
 <!-- EJEMPLO — borra estas líneas
 1. No diré que el producto «detecta» nada que no haya comprobado sobre al menos veinte casos reales. 14/09/2026 · A.G.P.
 2. No pegaré en ningún modelo datos de clientes que incluyan nombres, correos o facturación. 14/09/2026 · A.G.P.
 3. No publicaré ninguna cifra de resultados sin que una persona de fuera haya visto de dónde sale. 14/09/2026 · A.G.P.
 -->
+
+---
+
+## Cuándo uso IA y cuándo no
+
+**Usaré IA cuando:**
+
+_______________________________________________
+
+**No la usaré cuando:**
+
+_______________________________________________
+
+**Antes de aceptar una respuesta comprobaré:**
+
+_______________________________________________
+
+**Fecha:** ____________ · **Firma:** ________
 
 ---
 
